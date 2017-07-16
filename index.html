@@ -1,0 +1,272 @@
+<DOCTYPE html>
+  <head>
+    <title>Support Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+          nav {
+              padding: 8px 0;
+              z-index: 800;
+              position: fixed;
+              width: 100%;
+              background: #fff;
+              top: 0;
+        }
+        #title-img {
+              margin-left: 30px;
+        }
+        .menu-options {
+              font-size: 17px;
+              color: #333;
+        }
+        #log-in {
+              background: #fff;
+              border: 1px solid #3f84bf;
+              font-size: 17px;
+              text-shadow: none;
+              color: #333;
+              width: 90px;
+              border-radius: 2px;
+              padding: 5px 18px 8px;
+              margin-right: 15px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+        }
+        #right-most {
+              background: #3f84bf;
+              font-size: 17px;
+              color: #fff;
+              width: 90px;
+              text-shadow: none;
+              border-radius: 2px;
+              padding: 5px 18px 8px;
+              margin-top: 10px;
+              margin-right: 50px;
+        }
+        #upper-img {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  margin-top: -30px;
+}
+.section {
+  margin-top: 50px;
+  height: 300px;
+}
+.media-object1 {
+  width: 450px;
+  height: 240px;
+  border-radius: 1px;
+  margin-left: 20px;
+  position: relative;
+}
+#menu1 {
+  color: #3f84bf;
+  font-size: 40px;
+  margin-left:150px;
+  font-weight: 500;
+  position: relative;
+}
+#li-button {
+  margin-left: 200px;
+  margin-top: 15px;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background:-webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background:-moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+}
+#manual {
+  color: white;
+  font-size: 20px;
+}
+.faq {
+     font-size: 24px;
+     text-transform: uppercase;
+     color: black;
+     font-weight: 400;
+     margin-bottom: 30px;
+     text-align: center;
+  }
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#integration-list {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+#integration-list ul {
+    padding: 0;
+    margin: 20px 0;
+    color: #555;
+}
+#integration-list ul > li {
+    list-style: none;
+    border-top: 1px solid #ddd;
+    display: block;
+    padding: 15px;
+    overflow: hidden;
+}
+#integration-list ul:last-child {
+    border-bottom: 1px solid #ddd;
+}
+#integration-list ul > li:hover {
+    background: #efefef;
+}
+.expand {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+span {
+    font-size: 12.5px;
+}
+#left,#right{
+    display: table;
+}
+#sup{
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+}
+.detail a {
+    text-decoration: none;
+    color: #C0392B;
+    border: 1px solid #C0392B;
+    padding: 6px 10px 5px;
+    font-size: 14px;
+}
+.detail {
+    margin: 10px 0 10px 0px;
+    display: none;
+    line-height: 22px;
+    height: 150px;
+}
+.detail span{
+    margin: 0;
+}
+.right-arrow {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 10px;
+    height: 100%;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+    </style>
+  </head>
+  <body>
+
+    <!--header-->
+     <nav class="navbar navbar-default">
+        <div class="container-fluid">
+           <div class="navbar-header">
+               <a class="navbar-brand" href="#" id="title-img">
+               <img src="C:\new\logo.jpg" style="height:70px; width:100px; margin-top:-20px;">
+               </a>
+           </div>
+           <ul class="nav navbar-nav">
+                <li><a href="#" class="menu-options">Features</a></li>
+                <li><a href="#" class="menu-options">About Us</a></li>
+                <li><a href="#" class="menu-options">Blog</a></li>
+                <li><a href="#" class="menu-options">Contact Us</a></li>
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+                 <li><button type="button" class="btn" id="log-in">Log in</button></li>
+                 <li><button type="button" class="btn" id="right-most">Sign up</button></li>
+         </ul>
+        </div>
+     </nav>
+     <!--header ends-->
+
+     <!--image part starts-->
+     <div class="row top">
+         <img src="C:\new\blog.jpg" id="upper-img">
+   </div>
+
+   <div class="section">
+         <div class="media">
+           <div class="media-left">
+             <img src="C:\new\kiosk-img.png" class="media-object1">
+           </div>
+           <div class="media-body">
+                 <div id="menu1">Set up your kiosk</div>
+                   <button type="button" id="li-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
+                 <div class="first-faq">
+                   <h3 class="faq">faq</h3>
+                   <div id="integration-list">
+                       <ul>
+                           <li>
+                               <a class="expand">
+                                   <div class="right-arrow">+</div>
+                                   <div>
+                                       <h2>C.I.Agent Solutions</h2>
+                                       <span>Meets SPCC Regulation 40CFR112, Oil spill solutions, Oil Solidifier - just pick it up and send it to a land fill, Spill kits, Sub-station containment</span>
+                                   </div>
+                               </a>
+
+                               <div class="detail">
+                                   <div id="left" style="width:15%;float:left;height:100%;">
+                                       <div id="sup">
+                                           <img src="http://www.ciagent.com/ciagent/cialogo4.png" width="100%" />
+                                       </div>
+                                   </div>
+                                   <div id="right" style="width:55%;float:right;height:100%;padding-left:20px;">
+                                       <div id="sup">
+                                           <div><span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
+                                               <br />
+                                               <br /><a href="#">Visit Website</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </li>
+                         </ul>
+                       </div>
+
+                 </div>
+               </div>
+               </div>
+             </div>
+
+  </body>
+  <script>
+
+  $(function() {
+    $(".expand").on( "click", function() {
+      $(this).next().slideToggle(200);
+      $expand = $(this).find(">:first-child");
+
+      if($expand.text() == "+") {
+        $expand.text("-");
+      } else {
+        $expand.text("+");
+      }
+    });
+  });
+  </script>
+  </html>
