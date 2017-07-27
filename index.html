@@ -12,18 +12,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/596c2a611dc79b329518e9fe/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/596c2a611dc79b329518e9fe/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     <style>
           nav {
               padding: 8px 0;
@@ -53,6 +53,9 @@ s0.parentNode.insertBefore(s1,s0);
               margin-top: 10px;
               margin-bottom: 10px;
         }
+        #log-in:hover {
+              background-color: #3f84bf;
+        }
         #right-most {
               background: #3f84bf;
               font-size: 17px;
@@ -65,131 +68,239 @@ s0.parentNode.insertBefore(s1,s0);
               margin-right: 50px;
         }
         #upper-img {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 400px;
-  margin-top: -30px;
-}
-.section {
-  margin-top: 50px;
-  height: 300px;
-}
-.media-object1 {
-  width: 450px;
-  height: 240px;
-  border-radius: 1px;
-  margin-left: 20px;
-  position: relative;
-}
-#menu1 {
-  color: #3f84bf;
-  font-size: 40px;
-  margin-left:150px;
-  font-weight: 500;
-  position: relative;
-}
-#li-button {
-  margin-left: 200px;
-  margin-top: 15px;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background:-webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background:-moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-}
-#manual {
-  color: white;
-  font-size: 20px;
-}
-.faq {
-     font-size: 24px;
-     text-transform: uppercase;
-     color: black;
-     font-weight: 400;
-     margin-bottom: 30px;
-     text-align: center;
-  }
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: repeat;
+              background-size: cover;
+              width: 100vw;
+              height: 400px;
+              margin-top: -30px;
+       }
+       .section {
+              margin-top: 50px;
+              height: 350px;
+       }
+       .media-object1 {
+              width: 450px;
+              height: 240px;
+              border-radius: 1px;
+              margin-left: -450px;
+              position: absolute;
+       }
+       #menu1 {
+              color: #3f84bf;
+              font-size: 40px;
+              margin-left:1500px;
+              font-weight: 500;
+              position: absolute;
+              margin-top: -40px;
+       }
+       .kiosk-part {
+              height: 300px;
+              margin-left: 500px;
+              margin-top: 20px;
+       }
+       #li-button {
+              margin-left: 320px;
+              position: absolute;
+              background-color: #0099FF;
+              width: 200px;
+              height: 3em;
+              padding: 5px 20px;
+              border-radius: 10px;
+       }
+       #manual {
+              color: white;
+              font-size: 17px;
+              font-weight: bold;
+       }
+       .faq {
+              font-size: 44px;
+              text-transform: uppercase;
+              color: black;
+              text-align: center;
+              padding-top: 50px;
+       }
+       *,
+       *:before,
+       *:after {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+        }
+        #integration-list {
+              width: 80%;
+              margin: 0 auto;
+              display: table;
+        }
+        #integration-list ul {
+              padding: 0;
+              margin: 10px 0;
+              color: #555;
+        }
+        #integration-list ul > li {
+              list-style: none;
+              border-top: 1px solid #ddd;
+              display: block;
+              padding: 5px;
+              overflow: hidden;
+        }
+        #integration-list ul:last-child {
+              border-bottom: 1px solid #ddd;
+        }
+        #integration-list ul > li:hover {
+              background: #efefef;
+        }
+        .expand {
+              display: block;
+              text-decoration: none;
+              color: #555;
+              cursor: pointer;
+        }
+        h2 {
+              padding: 0;
+              margin: 0;
+              font-size: 17px;
+              font-weight: 400;
+        }
+        span {
+              font-size: 12.5px;
+        }
+        #right {
+              display: table;
+        }
+        .detail a {
+              text-decoration: none;
+              color: #C0392B;
+              border: 1px solid #C0392B;
+              padding: 6px 10px 5px;
+              font-size: 14px;
+        }
+        .detail {
+              margin: 5px 0 5px 0px;
+              display: none;
+              line-height: 22px;
+              height: 20px;
+        }
+        .detail span {
+              margin: 0;
+        }
+        .right-arrow {
+              margin-left: 20px;
+              width: 10px;
+              height: 100%;
+              float: right;
+              font-weight: bold;
+              font-size: 20px;
+        }
+        #part1 {
+              margin-left: -700px;
+              height: 400px;
+              border: 1px solid #3f84bf;
+        }
+        .role-heading {
+              text-align: center;
+        }
+        #admin {
+              border-radius: 50%;
+              display: block;
+              margin: auto;
+              width: 50%;
+              width: 100px;
+              height: 100px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+        }
+        #admin:hover {
+              transform: scale(1.2);
+        }
+        #employee {
+              border-radius: 50%;
+              display: block;
+              margin: auto;
+              width: 50%;
+              width: 100px;
+              height: 100px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+        }
+        #employee:hover {
+              transform: scale(1.2);
+        }
+        #frontdesk {
+              border-radius: 50%;
+              display: block;
+              margin: auto;
+              width: 50%;
+              width: 100px;
+              height: 100px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+        }
+        #frontdesk:hover {
+              transform: scale(1.2);
+        }
+        #part2 {
+              margin-left: 1500px;
+              height: 400px;
+              border: 1px solid #3f84bf;
+        }
+        .div-heading {
+              text-align: center;
 
-#integration-list {
-    font-family: 'Open Sans', sans-serif;
-    width: 80%;
-    margin: 0 auto;
-    display: table;
-}
-#integration-list ul {
-    padding: 0;
-    margin: 20px 0;
-    color: #555;
-}
-#integration-list ul > li {
-    list-style: none;
-    border-top: 1px solid #ddd;
-    display: block;
-    padding: 15px;
-    overflow: hidden;
-}
-#integration-list ul:last-child {
-    border-bottom: 1px solid #ddd;
-}
-#integration-list ul > li:hover {
-    background: #efefef;
-}
-.expand {
-    display: block;
-    text-decoration: none;
-    color: #555;
-    cursor: pointer;
-}
-h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 17px;
-    font-weight: 400;
-}
-span {
-    font-size: 12.5px;
-}
-#left,#right{
-    display: table;
-}
-#sup{
-    display: table-cell;
-    vertical-align: middle;
-    width: 80%;
-}
-.detail a {
-    text-decoration: none;
-    color: #C0392B;
-    border: 1px solid #C0392B;
-    padding: 6px 10px 5px;
-    font-size: 14px;
-}
-.detail {
-    margin: 10px 0 10px 0px;
-    display: none;
-    line-height: 22px;
-    height: 150px;
-}
-.detail span{
-    margin: 0;
-}
-.right-arrow {
-    margin-top: 12px;
-    margin-left: 20px;
-    width: 10px;
-    height: 100%;
-    float: right;
-    font-weight: bold;
-    font-size: 20px;
-}
+        }
+        #role-button {
+              background-color: #0099FF;
+              width: 200px;
+              height: 3em;
+              padding: 5px 20px;
+              margin-bottom: 10px;
+              padding-bottom: 10px;
+              border-radius: 10px;
+        }
+        #myDIV1 {
+              height: 100%;
+              width: 100%;
+              list-style-type: none;
+              text-align: center;
+              padding-left: -15px;
+        }
+        #myDIV2 {
+              background-color: lightgreen;
+              height: 100%;
+              width: 100%;
+              list-style-type: none;
+              text-align: center;
+              padding-left: -15px;
+        }
+        #myDIV3 {
+              background-color: orange;
+              height: 100%;
+              width: 100%;
+              list-style-type: none;
+              text-align: center;
+              padding-left: -15px;
+        }
+        #form-part {
+              position: relative;
+              height: 500px;
+              margin-top: 30px;
+              margin-left: 150px;
+              margin-right: 150px;
+        }
+        .form-heading {
+              font-size: 25px;
+              text-align: center;
+              margin-bottom: 20px;
+        }
+        #form-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+        }
     </style>
   </head>
   <body>
@@ -222,64 +333,410 @@ span {
    </div>
 
    <div class="section">
-         <div class="media">
-           <div class="media-left">
-             <img src="C:\new\kiosk-img.png" class="media-object1">
-           </div>
-           <div class="media-body">
-                 <div id="menu1">Set up your kiosk</div>
-                   <button type="button" id="li-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
-                 <div class="first-faq">
-                   <h3 class="faq">faq</h3>
-                   <div id="integration-list">
-                       <ul>
-                           <li>
-                               <a class="expand">
-                                   <div class="right-arrow">+</div>
-                                   <div>
-                                       <h2>C.I.Agent Solutions</h2>
-                                       <span>Meets SPCC Regulation 40CFR112, Oil spill solutions, Oil Solidifier - just pick it up and send it to a land fill, Spill kits, Sub-station containment</span>
-                                   </div>
-                               </a>
+      <div class="media">
+          <div class="media-left">
+             <img src="C:\support\kiosk.png" class="media-object1">
+          </div>
+          <div class="media-body">
+            <div id="menu1">Set up your Kiosk</div>
+            <div class="kiosk-part">
+              <button type="button" id="li-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
+              <h3 class="faq">faq</h3>
+              <div id="integration-list">
+                     <ul>
+                         <li>
+                             <a class="expand">
+                                 <div class="right-arrow">+</div>
+                                 <div>
+                                     <h2>C.I.Agent Solutions</h2>
+                                 </div>
+                             </a>
 
-                               <div class="detail">
-                                   <div id="left" style="width:15%;float:left;height:100%;">
-                                       <div id="sup">
-                                           <img src="http://www.ciagent.com/ciagent/cialogo4.png" width="100%" />
-                                       </div>
-                                   </div>
-                                   <div id="right" style="width:55%;float:right;height:100%;padding-left:20px;">
-                                       <div id="sup">
-                                           <div><span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
-                                               <br />
-                                               <br /><a href="#">Visit Website</a>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                         </ul>
-                       </div>
+                             <div class="detail">
+                                 <div id="right" style="width:55%;height:100%;">
+                                     <div id="sup">
+                                        <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                             <br />
+                                     </div>
+                                 </div>
+                             </div>
+                         </li>
+                         <li>
+                             <a class="expand">
+                                 <div class="right-arrow">+</div>
+                                 <div>
+                                     <h2>C.I.Agent Solutions</h2>
+                                 </div>
+                             </a>
 
+                             <div class="detail">
+                                 <div id="right" style="width:55%;height:100%;">
+                                     <div id="sup">
+                                        <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                             <br />
+                                     </div>
+                                 </div>
+                             </div>
+                         </li>
+                       </ul>
+                     </div>
+
+            </div>
+          </div>
+      </div>
+   </div>
+
+   <div class="bottom-part">
+     <div class="row">
+
+       <div class="col-md-4" id="part1">
+           <h3 class="role-heading">Choose Your Role</h3>
+
+           <div class="row">
+             <div class="col-md-12">
+               <div id="admin-img">
+                 <image src="admin.png" id="admin" onclick="myFunction1()" class="role-img">
                  </div>
-               </div>
                </div>
              </div>
 
+             <div class="row">
+               <div class="col-md-12">
+                 <div id="employee-img">
+                   <image src="employee.png" id="employee" onclick="myFunction2()" class="role-img">
+                   </div>
+                 </div>
+               </div>
+
+               <div class="row">
+                 <div class="col-md-12">
+                   <div id="frontdesk-img">
+                     <image src="frontdesk.png" id="frontdesk" onclick="myFunction3()" class="role-img">
+                     </div>
+                   </div>
+                 </div>
+
+       </div>
+
+       <div class="col-md-8" id="part2">
+
+           <div id="myDIV" style="display:block;">
+           <article class="div-heading">General Queries</article>
+           <div id="integration-list">
+                  <ul>
+                      <li>
+                          <a class="expand">
+                              <div class="right-arrow">+</div>
+                              <div>
+                                  <h2>C.I.Agent Solutions</h2>
+                              </div>
+                          </a>
+
+                          <div class="detail">
+                              <div id="right" style="width:55%;height:100%;">
+                                  <div id="sup">
+                                     <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                          <br />
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="expand">
+                              <div class="right-arrow">+</div>
+                              <div>
+                                  <h2>C.I.Agent Solutions</h2>
+                              </div>
+                          </a>
+
+                          <div class="detail">
+                              <div id="right" style="width:55%;height:100%;">
+                                  <div id="sup">
+                                     <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                          <br />
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                  <div id="myDIV1" style="display:none;">
+                    <article class="div-heading">Admin</article>
+                    <button type="button" id="role-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
+                    <div id="integration-list">
+                           <ul>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                             </ul>
+                           </div>
+                  </div>
+
+                  <div id="myDIV2" style="display:none;">
+                    <article class="div-heading">Employee</article>
+                    <button type="button" id="role-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
+                    <div id="integration-list">
+                           <ul>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                             </ul>
+                           </div>
+                  </div>
+
+                  <div id="myDIV3" style="display:none;">
+                    <article class="div-heading">Frontdesk</article>
+                    <button type="button" id="role-button"><a href="abc.pdf" download id="manual">Download Manual</a></button>
+                    <div id="integration-list">
+                           <ul>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li>
+                                   <a class="expand">
+                                       <div class="right-arrow">+</div>
+                                       <div>
+                                           <h2>C.I.Agent Solutions</h2>
+                                       </div>
+                                   </a>
+
+                                   <div class="detail">
+                                       <div id="right" style="width:55%;height:100%;">
+                                           <div id="sup">
+                                              <span>Duis autem vel eum iriure dolor in hendrerit in vulputate velit</span>
+                                                   <br />
+                                           </div>
+                                       </div>
+                                   </div>
+                               </li>
+                             </ul>
+                           </div>
+                  </div>
+
+       </div>
+
+     </div>
+   </div>
+
+         <div id="form-part">
+
+           <h2 class="form-heading">Enquiry Form</h2>
+
+             <div class="col-md-12 form-group">
+               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+             </div>
+             <div class="col-md-12 form-group">
+               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+             </div>
+
+             <div class="col-md-12 form-group">
+               <input class="form-control" id="mobileno." name="Mobile no." placeholder="+91" type="number">
+             </div>
+             <div class="col-md-12 form-group">
+               <input class="form-control" id="companyname" name="Company Name" placeholder="Company Name" type="text">
+             </div>
+             <div class="col-md-12 form-group">
+             <textarea class="form-control" id="querry" placeholder="Enter your querry here" rows="5"></textarea><br>
+           </div>
+             <div class="col-md-12 form-group" id="form-button">
+               <button class="btn btn-default" type="submit" style="width:150px;">Submit</button>
+             </div>
+           </div>
+
+         </div>
+
+
+   <script>
+     //for kiosk image sliding
+     setTimeout(function() {
+       $(".media-object1").animate({left:'500px'});
+     },900);
+     //for kiosk heading
+     setTimeout(function() {
+       $("#menu1").animate({left:'-700px'});
+     },900);
+     // for faq collapse
+     $(function() {
+     $(".expand").on( "click", function() {
+       $(this).next().slideToggle(200);
+       $expand = $(this).find(">:first-child");
+       if($expand.text() == "+") {
+         $expand.text("-");
+       } else {
+         $expand.text("+");
+       }
+     });
+   });
+
+   //for part1 sliding
+   setTimeout(function() {
+     $("#part1").animate({left:'700px'});
+   },900);
+   //for part-2 heading
+   setTimeout(function() {
+     $("#part2").animate({left:'-1020px'});
+   },900);
+
+   //for part1
+   function myFunction1() {
+     //var x = document.getElementById('myDIV4');
+     if (document.getElementById("myDIV1").style.display === 'none') {
+         document.getElementById("myDIV1").style.display = 'block';
+         document.getElementById("myDIV2").style.display = 'none';
+         document.getElementById("myDIV3").style.display = 'none';
+         document.getElementById("myDIV").style.display = 'none';
+       } else {
+         document.getElementById("myDIV1").style.display = 'none';
+     }
+   }
+   function myFunction2() {
+     //var x = document.getElementById('myDIV4');
+     if (document.getElementById("myDIV2").style.display === 'none') {
+         document.getElementById("myDIV2").style.display = 'block';
+         document.getElementById("myDIV1").style.display = 'none';
+         document.getElementById("myDIV3").style.display = 'none';
+         document.getElementById("myDIV").style.display = 'none';
+       } else {
+         document.getElementById("myDIV2").style.display = 'none';
+     }
+   }
+   function myFunction3() {
+     //var x = document.getElementById('myDIV4');
+     if (document.getElementById("myDIV3").style.display === 'none') {
+         document.getElementById("myDIV3").style.display = 'block';
+         document.getElementById("myDIV1").style.display = 'none';
+         document.getElementById("myDIV2").style.display = 'none';
+         document.getElementById("myDIV").style.display = 'none';
+       } else {
+         document.getElementById("myDIV3").style.display = 'none';
+     }
+   }
+     //$('.role-img').click(function() {
+      //     $('#form-part').animate({
+        //   'marginTop' : "+=80px" //moves down
+          // });
+       //});
+       /* var action=1;
+        $('.faq-btn1').on("click",viewSomething);
+        function viewSomething() {
+        if ( action == 1 ) {
+          $('#form-part').animate({
+          'marginTop' : "+=240px" //moves down
+        });
+          action = 2;
+        } else {
+          $('#form-part').animate({
+          'marginTop' : "-=160px" //moves up
+            });  action = 1;
+          }
+        }
+        var action=1;
+        $('.faq-btn2').on("click",viewSomething);
+        function viewSomething() {
+        if ( action == 1 ) {
+          $('#form-part').animate({
+          'marginTop' : "+=240px" //moves down
+        });
+          action = 2;
+        } else {
+          $('#form-part').animate({
+          'marginTop' : "-=160px" //moves up
+            });  action = 1;
+          }
+        }
+
+        var action=1;
+        $('.faq-btn3').on("click",viewSomething);
+        function viewSomething() {
+        if ( action == 1 ) {
+          $('#form-part').animate({
+          'marginTop' : "+=240px" //moves down
+        });
+          action = 2;
+        } else {
+          $('#form-part').animate({
+          'marginTop' : "-=160px" //moves up
+            });  action = 1;
+          }
+        }*/
+     </script>
   </body>
-  <script>
-
-  $(function() {
-    $(".expand").on( "click", function() {
-      $(this).next().slideToggle(200);
-      $expand = $(this).find(">:first-child");
-
-      if($expand.text() == "+") {
-        $expand.text("-");
-      } else {
-        $expand.text("+");
-      }
-    });
-  });
-  </script>
   </html>
