@@ -30,7 +30,7 @@
               z-index: 800;
               position: fixed;
               width: 100%;
-              background: #fff;
+              background-color: white;
               top: 0;
         }
         #title-img {
@@ -55,6 +55,12 @@
         }
         #log-in:hover {
               background-color: #3f84bf;
+              color: white;
+        }
+        #right-most:hover {
+              background-color: white;
+              color: #3f84bf;
+              border: 1px solid black;
         }
         #right-most {
               background: #3f84bf;
@@ -250,7 +256,8 @@
         }
         .div-heading {
               text-align: center;
-
+              font-size: 25px;
+              margin-bottom: 7px;
         }
         #role-button {
               background-color: #0099FF;
@@ -285,22 +292,51 @@
               padding-left: -15px;
         }
         #form-part {
-              position: relative;
-              height: 500px;
-              margin-top: 30px;
-              margin-left: 150px;
-              margin-right: 150px;
+           margin-left: 70px;
+           margin-right: 70px;
+           margin-top: 50px;
         }
         .form-heading {
-              font-size: 25px;
-              text-align: center;
-              margin-bottom: 20px;
+           text-align: center;
+           color: #3f84bf;
+           margin-bottom: 15px;
+           font-size: 25px;
         }
         #form-button {
+           width: 150px;
+           background: #3f84bf;
+           color: white;
+        }
+        #info {
+           background-color: lightblue;
+           margin-top: 20px;
+        }
+        .list {
+           list-style-type: none;
+           padding-left: 0pt;
+        }
+        #first {
+           margin-top: 30px;
+        }
+        #linkdin {
+           background-color: rgb(236,236,236);
+           height: 50px;
+           margin-left: 60px;
+           margin-right: 40px;
+           margin-bottom: 40px;
+        }
+        #linkdin-logo {
+           height:45px;
+           width:45px;
+           margin-left:auto;
+           margin-right:auto;
+           display:block;
+        }
+        /*#form-button {
               display: flex;
               align-items: center;
               justify-content: center;
-        }
+        }*/
     </style>
   </head>
   <body>
@@ -310,7 +346,7 @@
         <div class="container-fluid">
            <div class="navbar-header">
                <a class="navbar-brand" href="#" id="title-img">
-               <img src="C:\new\logo.jpg" style="height:70px; width:100px; margin-top:-20px;">
+               <img src="logo.jpg" style="height:70px; width:100px; margin-top:-20px;">
                </a>
            </div>
            <ul class="nav navbar-nav">
@@ -329,7 +365,7 @@
 
      <!--image part starts-->
      <div class="row top">
-         <img src="C:\new\blog.jpg" id="upper-img">
+         <img src="blog.jpg" id="upper-img">
    </div>
 
    <div class="section">
@@ -596,33 +632,94 @@
      </div>
    </div>
 
-         <div id="form-part">
+   <div class="row" id="form-part">
 
-           <h2 class="form-heading">Enquiry Form</h2>
+     <div class="col-md-7" id="form">
+       <h2 class="form-heading">Enquiry Form</h2>
 
-             <div class="col-md-12 form-group">
-               <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-             </div>
-             <div class="col-md-12 form-group">
-               <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-             </div>
-
-             <div class="col-md-12 form-group">
-               <input class="form-control" id="mobileno." name="Mobile no." placeholder="+91" type="number">
-             </div>
-             <div class="col-md-12 form-group">
-               <input class="form-control" id="companyname" name="Company Name" placeholder="Company Name" type="text">
-             </div>
-             <div class="col-md-12 form-group">
-             <textarea class="form-control" id="querry" placeholder="Enter your querry here" rows="5"></textarea><br>
-           </div>
-             <div class="col-md-12 form-group" id="form-button">
-               <button class="btn btn-default" type="submit" style="width:150px;">Submit</button>
-             </div>
-           </div>
-
+         <div class="col-md-12 form-group">
+           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+         </div>
+         <div class="col-md-12 form-group">
+           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
          </div>
 
+         <div class="col-md-12 form-group">
+           <input class="form-control" id="mobileno." name="Mobile no." placeholder="+91" type="number">
+         </div>
+         <div class="col-md-12 form-group">
+           <input class="form-control" id="companyname" name="Company Name" placeholder="Company Name" type="text">
+         </div>
+         <div class="col-md-12 form-group">
+         <textarea class="form-control" id="querry" placeholder="Enter your querry here" rows="5"></textarea><br>
+       </div>
+         <div class="col-md-12 form-group">
+           <button class="btn btn-default" type="submit" id="form-button">Submit</button>
+         </div>
+       </div>
+
+     <div class="col-md-5" id="info">
+
+        <div class="row" id="first">
+          <div class="col-md-2" id="wait">
+            <span class="glyphicon glyphicon-home pull-right" aria-hidden="true"></span>
+          </div>
+
+          <div class="col-md-10">
+            <ul class="list">
+              <li>
+                <article>Address</article>
+              </li>
+              <li>
+                Phi Space, S-23, Krishna Marg, Shyam Nagar, Jaipur-19, Raj. (India)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="first">
+          <div class="col-md-2">
+            <span class="glyphicon glyphicon-earphone  pull-right" aria-hidden="true"></span>
+          </div>
+
+          <div class="col-md-10">
+            <ul class="list">
+              <li>
+                <article>Phone</article>
+              </li>
+              <li>
+                +91-724-029-7080
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="first">
+          <div class="col-md-2">
+            <span class="glyphicon glyphicon-envelope  pull-right" aria-hidden="true"></span>
+          </div>
+
+          <div class="col-md-10">
+            <ul class="list">
+              <li>
+                <article>Email</article>
+              </li>
+              <li>
+                info@mPass.co.in
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="first">
+          <div id="linkdin">
+            <img src="linkdin.png" id="linkdin-logo">
+          </div>
+        </div>
+
+     </div>
+
+   </div>
 
    <script>
      //for kiosk image sliding
@@ -689,54 +786,7 @@
          document.getElementById("myDIV3").style.display = 'none';
      }
    }
-     //$('.role-img').click(function() {
-      //     $('#form-part').animate({
-        //   'marginTop' : "+=80px" //moves down
-          // });
-       //});
-       /* var action=1;
-        $('.faq-btn1').on("click",viewSomething);
-        function viewSomething() {
-        if ( action == 1 ) {
-          $('#form-part').animate({
-          'marginTop' : "+=240px" //moves down
-        });
-          action = 2;
-        } else {
-          $('#form-part').animate({
-          'marginTop' : "-=160px" //moves up
-            });  action = 1;
-          }
-        }
-        var action=1;
-        $('.faq-btn2').on("click",viewSomething);
-        function viewSomething() {
-        if ( action == 1 ) {
-          $('#form-part').animate({
-          'marginTop' : "+=240px" //moves down
-        });
-          action = 2;
-        } else {
-          $('#form-part').animate({
-          'marginTop' : "-=160px" //moves up
-            });  action = 1;
-          }
-        }
 
-        var action=1;
-        $('.faq-btn3').on("click",viewSomething);
-        function viewSomething() {
-        if ( action == 1 ) {
-          $('#form-part').animate({
-          'marginTop' : "+=240px" //moves down
-        });
-          action = 2;
-        } else {
-          $('#form-part').animate({
-          'marginTop' : "-=160px" //moves up
-            });  action = 1;
-          }
-        }*/
      </script>
   </body>
   </html>
